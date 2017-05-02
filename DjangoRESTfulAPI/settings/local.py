@@ -14,7 +14,16 @@ DEBUG = True
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, '../local.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'DjangoRESTfulAPI',
+        'USER': 'root',
+        'PASSWORD': 'admin',
+        'OPTIONS': {
+            'charset': 'utf8mb4'
+        },
+        'TEST': {
+            'CHARSET': 'utf8mb4',
+            'COLLATION': 'utf8mb4_unicode_ci'
+        }
     }
 }
