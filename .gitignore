@@ -1,0 +1,8 @@
+# JetBrains IDEs
+.idea
+
+# Byte-compiled
+*.pyc
+
+# SQLite
+*.sqlite3
